@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.toolbar)
         binding.toolbar.setOnMenuItemClickListener {
             if (it.itemId == R.id.menu_logout) {
-                navController.navigate(R.id.loginFragment)
+                navController.navigate(R.id.action_shoeListFragment_to_loginFragment)
             }
             false
         }
